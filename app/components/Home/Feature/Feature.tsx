@@ -1,77 +1,59 @@
-import React from "react";
+// import React from "react";
 import { BiSupport } from "react-icons/bi";
 import { FaMoneyBill, FaPiggyBank } from "react-icons/fa";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import SectionHeading from "../../Helper/SectionHeading";
 
+import React from "react";
+import FeatureCard from "./FeatureCard";
+
 const Feature = () => {
   return (
     <div className="pt-20 pb-16 bg-[#032055]">
       {/* {Section Heading} */}
-
       <SectionHeading heading="Why Choose Us" />
       {/* {define grid system} */}
 
       <div className="w-4/5 mt-16 items-center  mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-12">
-        {/* 1st feature card */}
-        <div>
-          <div className="p-6 cursor-pointer hover:scale-110 transition-all duration-300 bg-orange-600 rounded-md shadow-md">
-            {/* icon */}
-            <FaMoneyBill className="mx-auto mt-8 w-16 h-16 text-white" />
-            <h1 className="text-base text-center mt-8 mb-4 md:text-xl text-white font-semibold">
-              Fast Profit
-            </h1>
-            <p className=" text-center text-white  opacity-70">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              consequuntur.
-            </p>
-          </div>
-        </div>
+        {/* 1st feature card 1 */}
 
-        {/* 2nd feature card */}
-        <div>
-          <div className="p-6 cursor-pointer hover:scale-110 transition-all duration-300 bg-red-600 rounded-md shadow-md">
-            {/* icon */}
-            <FaPiggyBank className="mx-auto mt-8 w-16 h-16 text-white" />
-            <h1 className="text-base text-center mt-8 mb-4 md:text-xl text-white font-semibold">
-              Instant Withdraw
-            </h1>
-            <p className=" text-center text-white  opacity-70">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              consequuntur.
-            </p>
-          </div>
-        </div>
+        <FeatureCard
+          bg="bg-orange-600"
+          icon={FaMoneyBill}
+          heading="Fast Profit"
+          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+        consequuntur."
+        />
 
-        {/* 3rd feature card */}
-        <div>
-          <div className="p-6 cursor-pointer hover:scale-110 transition-all duration-300 bg-green-600 rounded-md shadow-md">
-            {/* icon */}
-            <FaMoneyBillTransfer className="mx-auto mt-8 w-16 h-16 text-white" />
-            <h1 className="text-base text-center mt-8 mb-4 md:text-xl text-white font-semibold">
-              Multi-Currency
-            </h1>
-            <p className=" text-center text-white  opacity-70">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              consequuntur.
-            </p>
-          </div>
-        </div>
+        {/* 1st feature card 2 */}
 
-        {/* 4th feature card */}
-        <div>
-          <div className="p-6 cursor-pointer hover:scale-110 transition-all duration-300 bg-indigo-900 rounded-md shadow-md">
-            {/* icon */}
-            <BiSupport className="mx-auto mt-8 w-16 h-16 text-white" />
-            <h1 className="text-base text-center mt-8 mb-4 md:text-xl text-white font-semibold">
-              Customer Support
-            </h1>
-            <p className=" text-center text-white  opacity-70">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-              consequuntur.
-            </p>
-          </div>
-        </div>
+        <FeatureCard
+          bg="bg-red-600"
+          icon={FaPiggyBank}
+          heading="Instant Withdraw"
+          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+        consequuntur."
+        />
+
+        {/* 1st feature card 3 */}
+
+        <FeatureCard
+          bg="bg-green-600"
+          icon={FaMoneyBillTransfer}
+          heading="Multi-Currency"
+          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+        consequuntur."
+        />
+
+        {/* 1st feature card 4 */}
+
+        <FeatureCard
+          bg="bg-indigo-900"
+          icon={BiSupport}
+          heading="Customer Support"
+          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
+        consequuntur."
+        />
       </div>
     </div>
   );
