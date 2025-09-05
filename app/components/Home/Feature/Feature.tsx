@@ -2,20 +2,14 @@ import React from "react";
 import { BiSupport } from "react-icons/bi";
 import { FaMoneyBill, FaPiggyBank } from "react-icons/fa";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
+import SectionHeading from "../../Helper/SectionHeading";
 
 const Feature = () => {
   return (
     <div className="pt-20 pb-16 bg-[#032055]">
-      <div className="text-center p-2">
-        <h1 className="text-[22px] md:text-[30px] text-white font-semibold">
-          Why Choose Us
-        </h1>
-        <h1 className="text-[15px] mt-1 md:text-[17px] text-white opacity-70">
-          We use the latest technologies and tools in order to create a better
-          code
-        </h1>
-      </div>
+      {/* {Section Heading} */}
 
+      <SectionHeading heading="Why Choose Us" />
       {/* {define grid system} */}
 
       <div className="w-4/5 mt-16 items-center  mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-12">
