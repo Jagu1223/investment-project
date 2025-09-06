@@ -38,7 +38,7 @@ const Price = () => {
           bg="bg-green-900"
           days="50"
           percentage="500"
-          percentageColor="bg-blue-600"
+          percentageColor="bg-red-600"
           minInvest="500"
           maxInvest="5000"
         />

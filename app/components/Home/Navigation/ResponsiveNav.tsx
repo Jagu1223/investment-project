@@ -8,10 +8,16 @@ const ResponsiveNav = () => {
   const [showNav, setShowNav] = useState(false);
   const showNavHandler = () => setShowNav(true);
   const closeNavHandler = () => setShowNav(false);
+  const toggleHandler = () => setShowNav((prev) => !prev);
+
   return (
     <div>
       <Nav openNav={showNavHandler} />
-      <MobileNav nav={showNav} closeNav={closeNavHandler} />
+      <MobileNav
+        nav={showNav}
+        closeNav={closeNavHandler}
+        toggle={toggleHandler}
+      />
     </div>
   );
   2;

@@ -5,10 +5,11 @@ import { FaXmark } from "react-icons/fa6";
 //props type
 type Props = {
   nav: boolean;
+  toggle: () => void;
   closeNav: () => void;
 };
 
-const MobileNav = ({ closeNav, nav }: Props) => {
+const MobileNav = ({ closeNav, nav, toggle }: Props) => {
   const navOpenStyle = nav ? "translate-x-0" : "translate-x-[-100%]";
 
   return (
@@ -23,8 +24,14 @@ const MobileNav = ({ closeNav, nav }: Props) => {
       />
       {/* {nav links} */}
       <ul className="relative z-[201] space-y-10 flex flex-col items-center justify-center h-full">
-        <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
+        {/* <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
           <Link href="/">Home</Link>
+        </li> */}
+
+        <li className=" text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
+          <Link href="/" onClick={toggle}>
+            Home
+          </Link>
         </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
           <Link href="/">About</Link>
