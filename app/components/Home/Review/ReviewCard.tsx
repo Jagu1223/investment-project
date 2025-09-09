@@ -23,7 +23,7 @@ const ReviewCard = ({ image, name }: Props) => {
       </p>
       {/* Profile  */}
 
-      <div className="flex mt-8 items-center space-x-4">
+      <div className="flex mt-8 items-center   space-x-4">
         <div>
           <Image src={image} alt={name} width={60} height={60} />
         </div>
