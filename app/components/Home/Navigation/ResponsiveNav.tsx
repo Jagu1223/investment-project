@@ -20,7 +20,6 @@ const ResponsiveNav = () => {
       />
     </div>
   );
-  2;
 };
 
 export default ResponsiveNav;

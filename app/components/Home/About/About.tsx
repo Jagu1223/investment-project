@@ -20,7 +20,7 @@ const About = () => {
             A faster way to do just about anything
           </h1>
           <p className="text-white opacity-60 mt-4  ">
-            Clarinet accustomed. Would legs of framework officers. We've to
+            Clarinet accustomed. Would legs of framework officers. We&apos;ve to
             morning like a contracting him, the the to said in need gradually
             wellfeigned.
           </p>
