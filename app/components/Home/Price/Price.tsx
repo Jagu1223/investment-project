@@ -11,37 +11,49 @@ const Price = () => {
 
       <div className="w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-16">
         {/* Price card 1 */}
+        {/* <div></div> */}
 
-        <PriceCard
-          bg="bg-teal-700"
-          days="20"
-          percentage="100"
-          percentageColor="bg-orange-600"
-          minInvest="100"
-          maxInvest="1000"
-        />
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+          <PriceCard
+            bg="bg-teal-700"
+            days="20"
+            percentage="100"
+            percentageColor="bg-orange-600"
+            minInvest="100"
+            maxInvest="1000"
+          />
+        </div>
 
         {/* Price card 2 */}
-
-        <PriceCard
-          bg="bg-red-900"
-          days="30"
-          percentage="300"
-          percentageColor="bg-green-600"
-          minInvest="300"
-          maxInvest="3000"
-        />
-
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-anchor-placement="top-center"
+        >
+          <PriceCard
+            bg="bg-red-900"
+            days="30"
+            percentage="300"
+            percentageColor="bg-green-600"
+            minInvest="300"
+            maxInvest="3000"
+          />
+        </div>
         {/* Price card 3 */}
-
-        <PriceCard
-          bg="bg-green-900"
-          days="50"
-          percentage="500"
-          percentageColor="bg-red-600"
-          minInvest="500"
-          maxInvest="5000"
-        />
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-anchor-placement="top-center"
+        >
+          <PriceCard
+            bg="bg-green-900"
+            days="50"
+            percentage="500"
+            percentageColor="bg-red-600"
+            minInvest="500"
+            maxInvest="5000"
+          />
+        </div>
       </div>
     </div>
   );

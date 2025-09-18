@@ -76,7 +76,7 @@ const About = () => {
           </div>
         </div>
         {/* Image Content */}
-        <div>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
           <Image src={AboutImage} alt="about" />
         </div>
       </div>

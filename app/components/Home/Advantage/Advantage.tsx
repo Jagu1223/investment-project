@@ -31,8 +31,10 @@ const Advantage = () => {
             velit repudiandae quo.
           </p>
         </div>
-        {/* Image content */}
-        <Image src={advantangeImage} alt="Advantage" />
+        <div data-aos="zoom-out" data-aos-anchor-placement="top-center">
+          {/* Image content */}
+          <Image src={advantangeImage} alt="Advantage" />
+        </div>
       </div>
     </div>
   );

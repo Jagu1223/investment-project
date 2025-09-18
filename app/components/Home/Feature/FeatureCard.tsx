@@ -11,6 +11,9 @@ type Props = {
 const FeatureCard = ({ bg, icon: Icon, heading, paragraph }: Props) => {
   return (
     <div
+      data-aos="fade-left"
+      data-a0s-delay="400"
+      data-aos-anchor-placement="top-center"
       className={`p-6 cursor-pointer hover:scale-110 transition-all duration-300 ${bg} rounded-md shadow-md`}
     >
       {/* icon */}
