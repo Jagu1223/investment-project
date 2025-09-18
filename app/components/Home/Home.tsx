@@ -27,14 +27,30 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <Hero />
-      <About />
-      <Feature />
-      <Price />
-      <Advantage />
-      <Investor />
-      <Review />
-      <Blog />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="investment">
+        <Feature /> {/* or Investment component if you have one */}
+      </section>
+      <section id="services">
+        <Price /> {/* or Services component */}
+      </section>
+      <section id="advantage">
+        <Advantage />
+      </section>
+      <section id="investor">
+        <Investor />
+      </section>
+      <section id="review">
+        <Review />
+      </section>
+      <section id="blog">
+        <Blog />
+      </section>
     </div>
   );
 };

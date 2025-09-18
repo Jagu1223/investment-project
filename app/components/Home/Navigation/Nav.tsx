@@ -19,27 +19,37 @@ const Nav = ({ openNav }: Props) => {
         {/* in small screen it will be hidden - Home About */}
         <ul className=" hidden lg:flex items-center space-x-10">
           <li className="text-[17px] font-semibold cursor-pointer text-yellow-300">
-            <Link href="/">Home</Link>
+            <Link href="#home">Home</Link>
           </li>
 
           <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
-            <Link href="/About">About</Link>
+            <Link href="#about">About</Link>
           </li>
 
           <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
-            <Link href="/">Investment</Link>
+            <Link href="#investment">Investment</Link>
           </li>
 
           <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200  text-white hover:text-yellow-400">
-            <Link href="/">Services</Link>
+            <Link href="#services">Services</Link>
           </li>
 
           <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
-            <Link href="/">Blog</Link>
+            <Link href="#blog">Blog</Link>
           </li>
 
           <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
-            <Link href="/">Contact</Link>
+            <Link href="#advantage">Advantage</Link>
+          </li>
+          <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
+            <Link href="#investor">Investor</Link>
+          </li>
+          <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
+            <Link href="#review">Review</Link>
+          </li>
+
+          <li className="text-[17px] font-semibold cursor-pointer transition-all duration-200 text-white hover:text-yellow-400">
+            <Link href="#footer">Contact</Link>
           </li>
         </ul>
         {/* {Login Button and navbar menu} */}

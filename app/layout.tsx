@@ -25,7 +25,11 @@ export default function RootLayout({
       <body suppressHydrationWarning className={font.className}>
         <ResponsiveNav />
         {children}
-        <Footer />
+
+        <section id="footer">
+          <Footer />
+        </section>
+
         <ScrollToTop />
       </body>
     </html>
